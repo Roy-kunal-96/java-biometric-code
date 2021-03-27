@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="false"
+                android:background="@color/colorPrimaryDark"
+                android:baselineAlignBottom="false"
+                android:baselineAligned="true"
+                android:cropToPadding="true"
+                android:padding="1dp"
+                app:srcCompat="@android:color/background_light" />
+
+            <TextView
+                android:id="@+id/textMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="20dp"
+                android:maxLines="2"
+                android:text="Status Message" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp" />
+
+            <Button
+                android:id="@+id/button"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="100dp"
+                android:enabled="true"
+                android:gravity="left|center_vertical"
+                android:isScrollContainer="false"
+                android:keepScreenOn="false"
+                android:text="Scan Finger Print"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:enabled="true"
+                android:text="CAPTURE PreView"
+                android:visibility="invisible"
+                tools:visibility="invisible" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:enabled="true"
+                android:text="CAPTURE (BG)"
+                android:visibility="invisible"
+                tools:visibility="invisible" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:enabled="true"
+                android:text="MATCH CAPTURE"
+                android:visibility="invisible"
+                tools:visibility="invisible" />
+
+            <Button
+                android:id="@+id/setflag"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-400dp"
+                android:text="set F"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/getflag"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="300dp"
+                android:text="GET F"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/resetflag"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="310dp"
+                android:text="RESET F"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
